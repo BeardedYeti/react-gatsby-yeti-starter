@@ -1,5 +1,6 @@
 {
   "name": "react-gatsby-yeti-starter",
+  "version": "0.0.1",
   "description": "React Gatsby Yeti Starter",
   "author": "Colin Smith",
   "license": "MIT",
