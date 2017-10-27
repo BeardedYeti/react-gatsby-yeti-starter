@@ -7,15 +7,15 @@ export default ({ data }) => {
   return (
     <div>
       <div className="post-body">
-      	  <Helmet title={`Gatsby-Yeti-Starter - ${post.frontmatter.title}`} />
-	      <h1>
-	        {post.frontmatter.title}
-	      </h1>
+        <Helmet title={`Gatsby-Yeti-Starter - ${post.frontmatter.title}`} />
+        <h1>
+          {post.frontmatter.title}
+        </h1>
         <span>
           By: {post.frontmatter.author} - {post.frontmatter.date}
         </span>
-	      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-	  </div>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     </div>
   )
 }
