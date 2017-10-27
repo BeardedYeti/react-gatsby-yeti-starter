@@ -33,6 +33,31 @@ Install this starter (assuming Gatsby is installed) by running from your CLI:
 gatsby new gatsby-yeti-starter
 ```
 
+Run Develop Server:
+```sh
+gatsby develop
+```
+
+Build For Deployment:
+```sh
+gatsby build
+```
+
+Run Production Server:
+```sh
+gatsby serve
+```
+
+Run Eslint for JavaScript:
+```sh
+npm run lint
+```
+
+Run Eslint FOR JavaScript And Fix Minor Issues :
+```sh
+npm run lint:fix
+```
+
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
