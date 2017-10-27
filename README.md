@@ -2,11 +2,12 @@
 
 > React Gatsby Yeti Starter
 
-Gatsby Starter Powered by React/GraphQL/Relay:
+Gatsby Starter Powered by React/Redux/GraphQL/Relay:
 - React-Helmet
 - Sass
+- Eslint
 - Typography
-- Glamorous
+- Glamor
 - nprogress
 - Site Map
 - Google Fonts
