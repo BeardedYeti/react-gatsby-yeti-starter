@@ -11,6 +11,9 @@ export default ({ data }) => {
 	      <h1>
 	        {post.frontmatter.title}
 	      </h1>
+        <span>
+          By: {post.frontmatter.author} - {post.frontmatter.date}
+        </span>
 	      <div dangerouslySetInnerHTML={{ __html: post.html }} />
 	  </div>
     </div>
@@ -23,6 +26,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
+        date(formatString: "DD MMM, YYYY")
       }
     }
   }

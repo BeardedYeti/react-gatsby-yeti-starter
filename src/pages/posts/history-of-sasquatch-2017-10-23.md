@@ -1,5 +1,6 @@
 ---
 title: "History of Sasquatch"
+author: "Colin Smith"
 date: "2017-10-23"
 ---
 

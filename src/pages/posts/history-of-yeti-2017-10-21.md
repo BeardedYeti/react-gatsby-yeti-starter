@@ -1,5 +1,6 @@
 ---
-title: History of Yeti
+title: "History of Yeti"
+author: "Colin Smith"
 date: "2017-10-21"
 ---
 
