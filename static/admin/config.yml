@@ -5,14 +5,17 @@ backend:
 publish_mode: editorial_workflow
 
 media_folder: "static/assets/images"
+public_folder: "/images"
 
 collections:
   - name: blog
     label: Blog
-    folder: "pages/posts"
+    folder: "src/pages/posts"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: title, label: title }
-      - { name: author, label: author }
-      - { name: date, label: date, widget: date }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
       
