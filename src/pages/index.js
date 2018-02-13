@@ -25,9 +25,9 @@ export default ({ data }) => {
 		    window.netlifyIdentity.init();
           }}
         />
-        
+
 	    <g.H1 display="inline-block" borderBottom="1px solid">
-			Test Posts
+			Blog Posts
 	    </g.H1>
 	    <h4>
 	      {data.allMarkdownRemark.totalCount} Posts
