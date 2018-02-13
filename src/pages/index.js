@@ -39,7 +39,8 @@ export default ({ data }) => {
 				      {node.frontmatter.title}{" "}
 				      <g.Span color="#BBB"> - {node.frontmatter.date}</g.Span>
 				    </g.H3>
-				    <p>
+				    <img className="thumbnail" src={node.frontmatter.image}/>
+				    <p className="excerpt">
 				      {node.excerpt}
 				    </p>
 				  </Link>
@@ -61,6 +62,7 @@ export const query = graphql`
 						title
 						author
 						date(formatString: "DD MMM, YYYY")
+						image
 					}
 					fields {
 						slug
