@@ -33,7 +33,7 @@ export default ({ data }) => {
 	      {data.allMarkdownRemark.totalCount} Posts
 	    </h4>
 	    {data.allMarkdownRemark.edges.map(({ node }) => (
-		    	<div key={node.id}>
+		    	<div className="blog-item" key={node.id}>
 				  <Link to={node.fields.slug} css={{ textDecoration: `none`, color: `inherit` }}> 
 				    <g.H3 marginBottom={rhythm(1 / 4)}>
 				      {node.frontmatter.title}{" "}

@@ -16,8 +16,14 @@ h1 {
 .post-body {
 	background: #b4cffa;
 }
+.blog-item {
+	overflow: auto;
+}
 .thumbnail {
-	/* float: left; */
+	width: 200px;
+	height: 125px;
+	float: left;
+	padding-right: 20px;
 }
 
 .excerpt {
