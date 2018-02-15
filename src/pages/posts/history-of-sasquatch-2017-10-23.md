@@ -1,7 +1,9 @@
 ---
-title: "History of Sasquatch"
-author: "Colin Smith"
-date: "2017-10-23"
+title: History of Sasquatch
+author: Colin Smith
+date: '2017-10-23'
+image: /img/sasquatch.jpg
+full_image: /img/sasquatch.jpg
 ---
 
 Bigfoot (also known as Sasquatch) is a cryptid which supposedly is a simian-like creature of American folklore that is said to inhabit forests, especially in the Pacific Northwest. Bigfoot is usually described as a large, hairy, bipedal humanoid. The term sasquatch is an Anglicized derivative of the Halkomelem word sásq'ets.
