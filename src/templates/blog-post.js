@@ -1,7 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Content, { HTMLContent } from '../components/Content';
-import Post from '../components/Post'
+import Post from '../components/Post';
+import Disqus from '../components/Disqus';
 
 /*export const BlogPostTemplate = ({
   content, contentComponent, description, title, helmet,
@@ -23,15 +24,24 @@ import Post from '../components/Post'
   );
 };*/
 
+const commentsBlock = (
+  <div>
+    <Disqus postNode={post} siteMetadata={data.site.siteMetadata} />
+  </div>
+);
+
 export default ({ data }) => {
   const { markdownRemark: post } = data;
 
-  return (<Post
-    content={post.html}
-    contentComponent={HTMLContent}
-    helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
-    title={post.frontmatter.title}
-  />);
+  return (
+    <Post
+      content={post.html}
+      contentComponent={HTMLContent}
+      helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
+      title={post.frontmatter.title}
+    />
+    {commentsBlock}
+  );
 };
 
 export const query = graphql`
