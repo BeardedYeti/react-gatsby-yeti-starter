@@ -1,8 +1,18 @@
 module.exports = {
 	siteMetadata: {
 		title:`Gatsby-Yeti-Starter`,
-		author: `Colin Smith`,
-		siteUrl: `http://localhost:8000`,
+		author: {
+	      name: 'Colin Smith',
+	      email: '#',
+	      telegram: '#',
+	      twitter: '@thecolinsmith',
+	      github: 'BeardedYeti',
+	      rss: '#',
+	      vk: '#'
+	    },
+		siteUrl: `https://zen-perlman-7c0316.netlify.com`,
+		subtitle: `Gatsby-Yeti`,
+		disqusShortname: '',
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,

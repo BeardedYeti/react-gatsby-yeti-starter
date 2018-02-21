@@ -18,5 +18,3 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Image", name: "image", widget: image}
       - {label: "Full Image", name: "full_image", widget: image}
-
-      
