@@ -12,7 +12,7 @@ module.exports = {
 	    },
 		siteUrl: `https://zen-perlman-7c0316.netlify.com`,
 		subtitle: `Gatsby-Yeti`,
-		disqusShortname: '',
+		disqusShortname: 'yeti-example',
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
