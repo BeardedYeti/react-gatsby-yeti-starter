@@ -7,17 +7,21 @@ import Disqus from '../components/Disqus';
 export default ({ data }) => {
   const { markdownRemark: post } = data;
 
-  return ([
-    <Post
-      content={post.html}
-      contentComponent={HTMLContent}
-      helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
-      title={post.frontmatter.title}
-    />,
+  return (
     <div>
-      <Disqus postNode={post} siteMetadata={data.site.siteMetadata} />
+      <div>
+        <Post
+          content={post.html}
+          contentComponent={HTMLContent}
+          helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
+          title={post.frontmatter.title}
+        />
+      </div>
+      <div>
+        <Disqus postNode={post} siteMetadata={data.site.siteMetadata} />
+      </div>
     </div>
-  ]);
+  );
 };
 
 export const query = graphql`
