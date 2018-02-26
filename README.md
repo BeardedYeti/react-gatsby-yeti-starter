@@ -1,11 +1,14 @@
-# react-gatsby-yeti-starter [![NPM version](https://badge.fury.io/js/react-gatsby-yeti-starter.svg)](https://npmjs.org/package/react-gatsby-yeti-starter) [![Build Status](https://travis-ci.org/BeardedYeti/react-gatsby-yeti-starter.svg?branch=master)](https://travis-ci.org/BeardedYeti/react-gatsby-yeti-starter)
+# react-gatsby-yeti-starter
 
 > React Gatsby Yeti Starter
 
 Gatsby Starter Powered by React/Redux/GraphQL/Relay:
+- Netlify
+- Disqus
 - React-Helmet
 - Sass
 - Eslint
+- Jest
 - Typography
 - Glamor
 - nprogress
@@ -30,7 +33,7 @@ For an overview of the project structure please refer to the [Gatsby documentati
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
 ```sh
-gatsby new gatsby-yeti-starter
+gatsby new react-gatsby-yeti-starter
 ```
 
 Run Develop Server:
@@ -58,9 +61,18 @@ Run Eslint FOR JavaScript And Fix Minor Issues :
 npm run lint:fix
 ```
 
+Run Jest Unit Tests :
+```sh
+npm run test
+```
+
+Run Jest Unit Tests With Watching:
+```sh
+npm run test:watch
+```
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BeardedYeti/react-gatsby-yeti-starter)
 ```
 
 ## License
