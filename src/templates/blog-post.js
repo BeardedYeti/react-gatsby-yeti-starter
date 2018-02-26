@@ -1,8 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Content, { HTMLContent } from '../components/Content';
-import Post from '../components/Post'
+import Post from '../components/Post';
 import Disqus from '../components/Disqus';
+import PostShare from '../components/PostShare';
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
@@ -16,10 +17,14 @@ export default ({ data }) => {
           helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
           title={post.frontmatter.title}
         />
+      </div>      
+      <div>
+        <PostShare postNode={post} siteMetadata={data.site.siteMetadata} />
       </div>
       <div>
         <Disqus postNode={post} siteMetadata={data.site.siteMetadata} />
       </div>
+
     </div>
   );
 };

@@ -30,3 +30,30 @@ h1 {
 /* 	float: left;
 	padding-left: 20px; */
 }
+// Post Share Style
+.share {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+	h4 {
+		margin-bottom: 0.5rem;
+	}
+	a {
+		font-size: 1.8rem;
+		display: inline-block;
+		//margin: 1rem 1.6rem 1.6 0;
+		padding: 0.5rem;
+		color: #bbc7cc;
+		text-decoration: none;
+	}
+}
+.icon-twitter:hover {
+	color: #55acee;
+}
+
+.icon-facebook:hover {
+	color: #3b5998;
+}
+
+.icon-google:hover {
+	color: #dd4b39;
+}
