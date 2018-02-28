@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FacebookShareButton, GooglePlusShareButton, TwitterShareButton } from "react-share";
-import {Icon} from 'react-fa';
+import Icon from 'react-fa';
 
 class PostShare extends Component {
 	render() {
