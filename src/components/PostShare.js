@@ -6,7 +6,8 @@ class PostShare extends Component {
 	render() {
 		const { postNode, siteMetadata } = this.props;
 		const post = postNode.frontmatter;
-		const url = siteMetadata.siteUrl + postNode.fields.slug;
+		const postUrl = postNode.fields.slug.substr(1);
+		const url = siteMetadata.siteUrl + postUrl;
 
 		return (
 			<section className="share">
