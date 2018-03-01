@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { FacebookShareButton, GooglePlusShareButton, TwitterShareButton } from "react-share";
-import Icon from 'react-fa';
+import { Icon } from 'react-fa';
 
 class PostShare extends Component {
 	render() {
 		const { postNode, siteMetadata } = this.props;
 		const post = postNode.frontmatter;
 		const postUrl = postNode.fields.slug.substr(1);
+		console.log(postUrl);
 		const url = siteMetadata.siteUrl + postUrl;
+		console.log(url);
 
 		return (
 			<section className="share">
