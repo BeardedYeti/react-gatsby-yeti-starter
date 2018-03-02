@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FacebookShareButton, GooglePlusShareButton, TwitterShareButton } from "react-share";
-import Icon from 'react-fa';
+import FaTwitter from 'react-icons/lib/fa/twitter-square';
+import FaFacebook from 'react-icons/lib/fa/facebook';
+import FaGoogle from 'react-icons/lib/fa/google-plus-square';
 
 class PostShare extends Component {
 	render() {
@@ -16,13 +18,13 @@ class PostShare extends Component {
 				<h4>Share this post</h4>
 				<div style={{ display: "flex" }}>
 					<TwitterShareButton url={url} title={post.title}>
-						<a className="icon-twitter"><Icon name="twitter-square"/></a>
+						<a className="icon-twitter"><FaTwitter/></a>
 					</TwitterShareButton>
 					<FacebookShareButton url={url} quote={post.title}>
-						<a className="icon-facebook"><Icon name="facebook"/></a>
+						<a className="icon-facebook"><FaFacebook/></a>
 					</FacebookShareButton>
 					<GooglePlusShareButton url={url}>
-						<a className="icon-google"><Icon name="google-plus-square"/></a>
+						<a className="icon-google"><FaGoogle/></a>
 					</GooglePlusShareButton>
 				</div>
 			</section>
