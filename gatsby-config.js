@@ -88,7 +88,7 @@ module.exports = {
 		      	"/*.js": [
 				  "Cache-Control: public, max-age=0, must-revalidate"
 				],
-				"/*.html": [
+				"/**/*.html": [
 				  "Cache-Control: public, max-age=0, must-revalidate"
 				],
 		      }, // option to add more headers. `Link` headers are transformed by the below criteria
