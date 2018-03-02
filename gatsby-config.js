@@ -84,7 +84,14 @@ module.exports = {
 		{
 		    resolve: `gatsby-plugin-netlify`,
 		    options: {
-		      headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+		      headers: {
+		      	"/*.js": [
+				  "Cache-Control: public, max-age=0, must-revalidate"
+				],
+				"/*.html": [
+				  "Cache-Control: public, max-age=0, must-revalidate"
+				],
+		      }, // option to add more headers. `Link` headers are transformed by the below criteria
 		      allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
 		      mergeSecurityHeaders: true, // boolean to turn off the default security headers
 		      mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
