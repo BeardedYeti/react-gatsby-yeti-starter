@@ -8,26 +8,26 @@ class PostShare extends Component {
 	render() {
 		const { postNode, siteMetadata } = this.props;
 		const post = postNode.frontmatter;
-		//const postUrl = postNode.fields.slug.substr(1);
-		//console.log(postUrl);
+		// const postUrl = postNode.fields.slug.substr(1);
+		// console.log(postUrl);
 		const url = siteMetadata.siteUrl + postNode.fields.slug;
 
 
 		return (
-			<section className="share">
-				<h4>Share this post</h4>
-				<div style={{ display: "flex" }}>
-					<TwitterShareButton url={url} title={post.title}>
-						<a className="icon-twitter"><FaTwitter/></a>
-					</TwitterShareButton>
-					<FacebookShareButton url={url} quote={post.title}>
-						<a className="icon-facebook"><FaFacebook/></a>
-					</FacebookShareButton>
-					<GooglePlusShareButton url={url}>
-						<a className="icon-google"><FaGoogle/></a>
-					</GooglePlusShareButton>
-				</div>
-			</section>
+  <section className="share">
+    <h4>Share this post</h4>
+    <div style={{ display: "flex" }}>
+      <TwitterShareButton url={url} title={post.title}>
+        <a className="icon-twitter"><FaTwitter /></a>
+      </TwitterShareButton>
+      <FacebookShareButton url={url} quote={post.title}>
+        <a className="icon-facebook"><FaFacebook /></a>
+      </FacebookShareButton>
+      <GooglePlusShareButton url={url}>
+        <a className="icon-google"><FaGoogle /></a>
+      </GooglePlusShareButton>
+    </div>
+  </section>
 		);
 	}
 }

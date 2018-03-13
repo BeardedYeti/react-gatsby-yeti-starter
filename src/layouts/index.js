@@ -3,6 +3,7 @@ import g from "glamorous"
 import { css } from "glamor"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
+import Footer from "../components/Footer.js";
 
 import './index.scss'
 
@@ -39,6 +40,7 @@ export default ({ children, data }) => (
 					About
         </Link>
         {children()}
+        <Footer/>
       </g.Div>
     </div>
   </div>

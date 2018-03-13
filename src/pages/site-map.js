@@ -29,7 +29,7 @@ export default ({ data }) => {
   <td>
     {node.birthTime}
   </td>
-</tr>))}
+             </tr>))}
       </tbody>
     </table>
   </div>

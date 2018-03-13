@@ -17,7 +17,7 @@ export default ({ data }) =>
 			  photos and videos of stuff.
       </p>
     </div>
-  </div>)
+   </div>)
 
 export const query = graphql`
   query AboutQuery {
